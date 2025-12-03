@@ -1,0 +1,176 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 24px;
+  background: #0d0d0d;
+}
+
+.login-form {
+  background: #1e1e1e;
+  color: #fff;
+  padding: 32px;
+  border-radius: 16px;
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
+  border: 1px solid var(--border-color);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.login-form label {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.login-form input {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #333;
+  background: #161616;
+  color: #fff;
+}
+.login-form input:disabled {
+  opacity: 0.5;
+}
+
+.input-with-validation {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.input-with-validation input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.validation-icon {
+  position: absolute;
+  right: 12px;
+  font-size: 1.2rem;
+}
+
+.password-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+.password-toggle-icon {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  user-select: none;
+  font-size: 1.2rem;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.remember-me input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+}
+
+.forgot-password-link {
+  color: var(--accent);
+  text-decoration: none;
+  cursor: pointer;
+}
+.forgot-password-link:hover {
+  text-decoration: underline;
+}
+
+.submit-button {
+  background: var(--accent);
+  border: none;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.2s;
+  margin-top: 1rem;
+}
+.submit-button:hover {
+  opacity: 0.9;
+}
+.submit-button:disabled {
+  background: #555;
+  cursor: not-allowed;
+}
+
+.error-message {
+  color: salmon;
+  margin-top: 8px;
+  text-align: center;
+}
+.error-message.orange {
+  color: orange;
+}
+
+.register-link {
+  margin-top: 12px;
+  text-align: center;
+  color: var(--text-muted);
+}
+.register-link span {
+  color: var(--accent);
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.back-to-home-button {
+  margin-top: 10px;
+  background: var(--button-bg) !important;
+  color: var(--text-muted) !important;
+  border: 1px solid var(--border-color) !important;
+}
+
+.suggestions-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-top: -4px;
+  flex-wrap: wrap;
+}
+
+.suggestion-chip {
+  background: var(--button-bg);
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  color: var(--text-primary);
+}
+
+.suggestion-chip:hover {
+  background-color: var(--accent);
+  color: white;
+}

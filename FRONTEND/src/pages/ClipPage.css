@@ -1,0 +1,22 @@
+.clip-page-layout { display: grid; grid-template-columns: 1fr 340px; gap: 1.5rem; height: calc(100vh - 56px); }
+.clip-main-content { display: flex; flex-direction: column; }
+.clip-video-player { width: 100%; aspect-ratio: 16 / 9; background-color: #000; position: relative; border-radius: 8px; overflow: hidden; }
+.clip-video-player img { width: 100%; height: 100%; object-fit: cover; }
+.video-controls { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(0,0,0,0.6), transparent); padding: 1rem; display: flex; align-items: center; gap: 1rem; color: white; }
+.progress-bar { flex-grow: 1; height: 4px; background-color: rgba(255, 255, 255, 0.5); border-radius: 999px; }
+.clip-info-section { padding-top: 1rem; }
+.clip-title-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+.clip-title-bar h4 { margin: 0; font-size: 1.2rem; font-weight: 700; color: var(--text-primary); }
+.share-button { background: var(--button-bg); border: 1px solid var(--border-color); color: var(--text-primary); padding: 6px 12px; border-radius: 6px; cursor: pointer; }
+.clip-meta { color: var(--text-muted); font-size: 0.9rem; margin: 0; }
+.streamer-info-bar { display: flex; align-items: center; gap: 12px; margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border-color); }
+.streamer-info-bar img { width: 50px; height: 50px; border-radius: 50%; }
+.streamer-details { display: flex; flex-direction: column; flex-grow: 1; }
+.streamer-details strong { color: var(--text-primary); font-weight: 700; }
+.streamer-details small { color: var(--text-muted); font-size: 0.85rem; }
+.follow-button-clip { background-color: var(--accent); color: white; border: none; padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+.following-button { background-color: var(--button-bg); color: var(--text-primary); border: 1px solid var(--border-color); padding: 8px 16px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+.clip-chat-panel { background-color: var(--bg-sidebar); border-left: 1px solid var(--border-color); display: flex; flex-direction: column; height: 100%; }
+.chat-header { padding: 1rem; border-bottom: 1px solid var(--border-color); text-align: center; }
+.chat-header h5 { margin: 0; color: var(--text-primary); }
+.chat-body { flex-grow: 1; padding: 1rem; color: var(--text-muted); text-align: center; }

@@ -1,0 +1,85 @@
+.category-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.category-page-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.5rem;
+}
+
+.category-logo {
+  width: 100px;
+  height: 133px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.category-header-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+.category-header-info h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.category-stats {
+  color: var(--text-muted);
+  display: flex;
+  gap: 0.5rem;
+}
+
+.category-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  background-color: var(--button-bg);
+  color: var(--text-muted);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+.follow-button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.category-tabs {
+  display: flex;
+  gap: 1.5rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tab-item {
+  padding: 0.5rem 0;
+  color: var(--text-muted);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.tab-item.active {
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+}
+
+.stream-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}

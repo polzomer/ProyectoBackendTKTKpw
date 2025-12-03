@@ -1,0 +1,72 @@
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.chat-messages {
+  flex-grow: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.chat-message {
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.user-level-badge {
+  background-color: var(--accent);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-right: 6px;
+}
+
+.user-name {
+  font-weight: 700;
+  margin-right: 6px;
+  color: var(--yellow);
+}
+
+.chat-form {
+  display: flex;
+  padding: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.chat-input {
+  flex-grow: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+  background-color: var(--button-bg);
+  color: var(--text-primary);
+  margin-right: 10px;
+}
+
+.send-button {
+  background-color: var(--accent);
+  color: white;
+  border: none;
+  padding: 0 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.chat-login-prompt {
+  padding: 1rem;
+  text-align: center;
+  color: var(--text-muted);
+  border-top: 1px solid var(--border-color);
+}

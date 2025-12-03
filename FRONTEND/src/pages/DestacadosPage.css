@@ -1,0 +1,122 @@
+.destacados-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.section-title {
+  color: var(--yellow);
+  font-weight: 800;
+  font-size: 2rem;
+  margin: 0;
+}
+
+.section-subtitle {
+  color: var(--text-muted);
+  margin: 0.5rem 0 0 0;
+}
+
+.sub-section-title {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.top-streamers-carousel {
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  padding-bottom: 1.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+.top-streamers-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.streamer-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 1.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  min-width: 150px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.streamer-card:hover {
+  transform: translateY(-5px);
+}
+
+.streamer-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 3px solid var(--accent);
+}
+
+.streamer-name {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 0.5rem;
+}
+
+.streamer-category {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.clips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.clip-card {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.clip-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.clip-thumbnail-wrapper {
+  position: relative;
+}
+.clip-thumbnail-wrapper img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  display: block;
+}
+.clip-views {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.clip-info {
+  padding: 12px;
+}
+.clip-title {
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+.clip-streamer {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
